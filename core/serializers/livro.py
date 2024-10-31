@@ -5,7 +5,7 @@ from core.models import Livro
 class LivroSerializer(ModelSerializer):
     class Meta:
         model = Livro
-        fields = "__all__"
+        fields = ("id", "titulo", "preco")
 
 
 class LivroDetailSerializer(ModelSerializer):
