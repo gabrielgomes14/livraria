@@ -2,6 +2,7 @@ from django.db import models
 from .categoria import Categoria
 from .editora import Editora
 from .autor import Autor
+from uploader.models import Image
 
 
 class Livro(models.Model):
@@ -15,3 +16,12 @@ class Livro(models.Model):
 
     def __str__(self):
         return f"({self.id}) {self.titulo} ({self.quantidade})"
+    
+    capa = models.ForeignKey(
+        Image,
+        related_name="+",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        default=None,
+    )
