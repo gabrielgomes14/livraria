@@ -4,10 +4,10 @@ from .editora import EditoraSerializer
 from .autor import AutorSerializer
 from .livro import LivroSerializer, LivroListSerializer, LivroRetrieveSerializer
 from .compra import (
-    CompraSerializer,
-    ItensCompraSerializer,
+    CompraListSerializer, # novo
     CompraCreateUpdateSerializer,
-    CompraListSerializer,
-    ItensCompraListSerializer,
+    CompraSerializer,
+    ItensCompraCreateUpdateSerializer,
+    ItensCompraListSerializer, # novo
     ItensCompraSerializer,
 )
