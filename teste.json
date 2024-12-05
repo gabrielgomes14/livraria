@@ -1,4 +1,7 @@
-
+MODE = None 
+MEDIA_URL = '/media/' 
+DATABASES = {'default': {'NAME': 'db.sqlite3', 'USER': '', 'PASSWORD': '', 'HOST': '', 'PORT': '', 'CONN_MAX_AGE': 600, 'CONN_HEALTH_CHECKS': True, 'DISABLE_SERVER_SIDE_CURSORS': False, 'ENGINE': 'django.db.backends.sqlite3'}}
+[
 {
   "model": "admin.logentry",
   "pk": 1,
