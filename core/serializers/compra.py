@@ -77,7 +77,7 @@ class ItensCompraListSerializer(ModelSerializer):
 
     class Meta:
         model = ItensCompra
-        fields = ("quantidade", "livro")
+        fields = ("quantidade", "livro") # Quantidade e Livro
         depth = 1
 
 class CompraListSerializer(ModelSerializer):
