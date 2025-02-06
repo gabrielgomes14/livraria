@@ -9,6 +9,13 @@ from .livro import (
     LivroListSerializer,
     LivroRetrieveSerializer,
 )
+from .livro import (
+    LivroAjustarEstoqueSerializer,
+    LivroAlterarPrecoSerializer,
+    LivroSerializer,
+    LivroListSerializer,
+    LivroRetrieveSerializer,
+)
 from .compra import (
     CompraSerializer,
     ItensCompraSerializer,
